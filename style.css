@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    color:white;
+    background-image: url('/images/weather-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 720px;
+}
+
+.wrapper{
+    background: rgba(255, 255, 255, 0.104);
+    margin-top: 250px;
+    border-radius: 20px;
+    padding: 60px;
+    max-width: 600px;
+    margin: 200px auto;
+}
+
+hr{
+    color: white;
+}
+
+h3{
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.location{
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+}
+button{
+    background: #1E3760;
+    color: white;
+    width: 100px;
+    padding: 9px;
+    font-size: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+@media(max-width: 960px){
+    input{
+        width: 200px;
+    }
+    button{
+        margin-left: 10px;
+    }
+}
+
