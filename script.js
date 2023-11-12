@@ -1,3 +1,4 @@
+//constant variables for element id(s)
 const cityInput = document.getElementById("search-form");
 const searchBtn = document.getElementById("search-button");
 const cityElement = document.getElementById("city");
@@ -12,8 +13,6 @@ function searchForm(city) {
     console.log(city);
     let apiKey = "134bd5dcb9c39910fd6b0440333776c2";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-
-
 
     axios.get(apiUrl).then(response => {
         console.log(response);
@@ -38,7 +37,7 @@ function searchForm(city) {
     
 }
 
-//functions to activate search input + button 
+//function to activate search input + button 
 
 function submitBtn(event){
     event.preventDefault();

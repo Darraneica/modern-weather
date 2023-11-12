@@ -1,14 +1,20 @@
 *{
     box-sizing: border-box;
     font-family: Poppins;
+    max-width: 100%;
 }
 
 body{
     color:white;
-    background-image: url('/images/weather-background.jpeg');
+    background: #43AEFC;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+#title{
+    margin-top: 100px;
+    margin-bottom: -100px;
 }
 
 .container{
@@ -17,7 +23,7 @@ body{
 
 .wrapper{
     background: rgba(255, 255, 255, 0.104);
-    margin-top: 250px;
+    margin-top: 50px;
     border-radius: 20px;
     padding: 60px;
     max-width: 600px;
@@ -41,13 +47,21 @@ h3{
 input{
     padding: 10px;
     width: 300px;
+    border: none;
+    border-color: none;
+    border-bottom: 1px solid black;
+    background: transparent; 
+}
+
+input:focus{
+    outline: none;
 }
 button{
-    background: #1E3760;
-    color: white;
+    background: 0;
+    color: #fff;
     width: 100px;
     padding: 9px;
-    font-size: 20px;
+    font-size: 30px;
     border: none;
     margin-left: 20px;
 }
